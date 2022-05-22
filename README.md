@@ -5,3 +5,6 @@ Implement the graph search version of breadth-first search (as described in AIMA
 The problem scenario is the vacuum world. The diagram of all 8 states is shown below. Each state has a number in red. You will need to represent the states and transitions shown in the diagram in your program in some form. For example, state 1 expands to states 1, 2 and 3 (by the actions Left, Right and Suck).
 
 Note:  AIMA refers to Artificial Intelligence: A Modern Approach, by Stuart Russell and Peter Norvig 
+
+![image](https://user-images.githubusercontent.com/60503179/169688495-def48632-72a4-4e7b-9b32-e3e6e1da0f34.png)
+
