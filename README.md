@@ -8,5 +8,6 @@ Note:  AIMA refers to Artificial Intelligence: A Modern Approach, by Stuart Russ
 
 ![image](https://user-images.githubusercontent.com/60503179/169688495-def48632-72a4-4e7b-9b32-e3e6e1da0f34.png)
 Fig. 1. State diagram. 
+
 The initial state is state 1, and the goal states are 7 and 8.
 
