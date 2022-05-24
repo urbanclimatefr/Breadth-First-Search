@@ -6,9 +6,9 @@ class VacuumBFS {
   //  For example, looking up state 1 in the actionRight array gives state 2
   //  which is the result of moving right from state 1 (see the diagram in 
   //  unit 2.8)
-  static int[] actionLeft={1,1,3,3,5,5,7,7};
+  static int[] actionLeft= {1,1,3,3,5,5,7,7};
   static int[] actionRight={2,2,4,4,6,6,8,8};
-  static int[] actionSuck={3,6,3,8,7,6,7,8};
+  static int[] actionSuck= {3,6,3,8,7,6,7,8};
   
   //  Returns true when s is a goal state. 
   static boolean goalTest(int s) {
@@ -43,11 +43,13 @@ class VacuumBFS {
       //  Expand 'node'
       //  Make children array containing the three states that
       //  result from applying the three actions to the current state.
-      int[] children = {actionLeft[node], actionRight[node], actionSuck[node]};
+      int[] children = {actionLeft[node-1], actionRight[node-1], actionSuck[node-1]};
+      
+      System.out.println("Expanding node: "+node+" to: "+Arrays.toString(children));
       
       for(int child : children) {
         if(goalTest(child)) {
-          System.out.println("Solution found!");
+          System.out.println("Goal state found: "+child);
           return true;
         }
         if( !frontier.contains(child) && !explored.contains(child) ) {
